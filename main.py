@@ -59,9 +59,9 @@ def write_to_file(bvid, title, up, tagList, info_text,pic):
                 f.write(f"  - {tag}\n")
             f.write("---\n\n")
             f.write(f"![{title}]({pic})\n\n")
-            f.write(f"[{title}](https://www.bilibili.com/video/{bvid})\n\n")
+            f.123write(f"[{title}](https://www.bilibili.com/video/{bvid})\n\n")
             f.write(f"> [!简介]\n> {info_text}")
-    123except IOError as e:
+    except IOError as e:
         print(f"{red}文件写入错误: {e}{reset}")
 if __name__ == '__main__':
     while True:
